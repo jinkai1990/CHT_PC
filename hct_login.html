@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>登陆</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_index.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+     <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+ 
+</head>
+<body>
+<div class="content">
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+<!-- 跳转到登录位置 -->
+<div id="pos"></div>
+<!-- 跳转到登录位置 end -->
+
+    <!-- 登陆内容 -->
+<div class="main clearfixd">
+    <div class="login_box">
+        <div class="title_box">
+            <span class="title">登录</span>
+            <p class="r_register">还没有帐号？<a href="hf_register.html" class="now" >立即注册>></a></p>
+        </div>
+        <form>
+          <div class="login_in">
+             <p class="phone_iocn"></p>
+             <input class="input_box" type="text" value="" placeholder="请输入您的手机号"/>
+          </div>
+          <div class="login_in">
+            <p class="pass_iocn"></p>
+            <input class="input_box" type="password" value="" placeholder="请输入密码"/>
+           </div> 
+           <div class="forget">
+               <label class="label_inp"><input type="checkbox" value=""/>记住账号</label>
+               <a href="javasrcpit:void(0)" class="forget_pass">忘记密码？</a>
+           </div>
+           <input type="submit" value="立即登录" class="btn">
+                   <!-- 第三方登陆 -->
+        <div class="second_login">
+               <p class="second_text"></p>
+               <a href="" class="wiexing">
+                 <img src="./images/wiexing.png"/>
+               </a>
+        </div>
+
+
+        <!-- 第三方登陆 end -->
+        </form>
+
+  </div>
+</div>    
+    <!-- 登陆内容 end -->
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+</div>
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+      $(function () {
+         $('input').placeholder();        
+      })
+
+</script>
+
+</html>

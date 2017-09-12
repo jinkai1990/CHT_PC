@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>我的乐谱详情-个人</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_index.css">
+    <!-- 图片放大样式表 -->
+    <link rel="stylesheet" type="text/css" href="./css/imgfanda.css" />
+    <!-- 图片放大样式表 -->
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+     <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+<div class="content">
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+    <!-- 主要内容 -->
+  <div class="clearfix">
+      <!-- 路径及标题 -->
+      <div class="common_part01 of_height"> 
+        <div class="well">
+           <p class="location clearfix">
+           <a href="hct_index.html" class="loca_a ">首页</a>           
+           <a href="hct_personal-center.html" class="loca_a ">个人中心</a>
+           <a href="#" class="loca_a ">我的乐谱</a>           
+           <a href="hct_product-details.html" class="loca_a loca_last">乐谱详情</a>
+
+           </p>         
+
+        </div>
+      </div>
+      <!-- 路径及标题 -->
+      <div class="common_part02">
+          <div class="well">
+             <div class="details_part01 well of_height">
+               <p class="fl detail_p">
+                 <img src="./images/list_img01.gif" width="230" height="335" class="detail_img" />
+               </p>
+               <div class="details_box fl">
+                 <ul class="details_ul">
+                   <li class="details_name">Alleluia</li>
+                   <li>出版号：2015123456</li>
+                   <li>乐谱打印权属：弗莱合唱团</li>
+                   <li>累计授权份数：5份</li>
+                   <!-- 判断时间是否到期 ，到期  （已失效）的样式为style="display:block;"显示-->
+                   <li>乐谱表演授权：1年，截止日期2017年03月31日<span style="display:none;">（已失效）</span></li>
+                   <li>乐谱序列号：1234567890123 </li>
+                   <li>材质：电子文档</li>
+<!--                    <li>
+                     <a href="hct_confirm-print.html" class="print details_btn">打印授权 </a>
+                     <a href="hct_confirm-perform.html" class="perform details_btn">表演授权</a>
+                   </li>
+ -->                   <li>
+                     <a href="hct_Product-details.html" class="details_add">增加授权 </a>                     
+                   </li>
+                 </ul>
+               </div>
+             </div>
+             <div class="details_part02 ">
+                <p class="dianji p0 ta_center">乐谱实物谱例:<span class="p9">（点击可查看大图）</span></p>
+
+                <div class="item of_height">
+                     <ul  class=" ul_lightBox">
+                        <li class="light_li"><img src="./images/detail_img03.gif" width="600" height="800" /></li>
+                        <li class="light_li"><img src="./images/detail_img03.gif" width="600" height="800"/></li>
+                     </ul>
+                </div>
+              </div>
+             <div class="details_part03 ">
+                <img src="./images/erweima.png" height="240" width="240" class="erweima fl"/>
+                <div class="fl chcek_r">
+                  <h3 class="cf60 my_deTitle">手机扫描二维码查验</h3>
+                  <p class="p0 fl my_detailtext">您可以扫描左方的二维码检验您的乐谱授权情况，如果您发现所购乐谱的查验结果与实物乐谱不匹配，或怀疑该乐谱被非法使用，如乐谱使用者并非该查验结果的权属合唱团，或上列合唱团演出时并未得到表演授权，或表演人数超出累计授权份数等，请点击 <a href="hct_legal-report.html" class="red">版权投诉</a>。</p>
+                </div>
+             </div>
+
+
+
+          </div>
+      </div>
+
+  </div>
+
+    <!-- 主要内容 end -->
+
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+</div>
+</body>
+
+<!-- 图片放大插件 -->
+<script type="text/javascript" src="js/lightBboxli.js"></script>
+<script>
+$(function(){  $(".item").LightBox({
+    controls : true //上一张、下一张按钮是否显示，默认是显示true
+    });
+    var height  = $(document).height();
+  $('.lightbox_bg').height(height-36);
+  
+  })
+</script>
+</html>

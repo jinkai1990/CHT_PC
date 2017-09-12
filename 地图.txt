@@ -1,0 +1,76 @@
+ 
+hct_index.html 首页
+
+hct_login.html 登陆
+
+hct_register.html 注册-第一步
+
+hct_register01.html 注册-第二步
+
+hct_register02.html 注册-作曲家
+
+hct_register03.html 注册-合唱团
+
+hct_change_password.html 修改密码
+
+hct_order-detail.html 订单详情-打印授权
+
+hct_order-detail01.html 订单详情-表演授权
+
+hct_personal-center.html 个人中心
+
+hct_team-information.html 个人信息（合唱团）
+
+hct_change-team.html 个人信息-修改合唱团
+
+hct_change-address.html 个人信息-修改地址
+
+hct_per-information.html 个人信息（作曲家）
+
+hct_team-orderCenter.html 合唱团-订单中心（未支付-已支付）
+
+hct_evaluate.html  乐谱评价
+
+hct_evaluate-now.html  乐谱-立即评价
+
+hct_per-production.html 提交新作品
+
+hct_my-production.html  我的作品
+
+hct_my-collect.html  我的收藏
+
+hct_product-list.html  乐谱列表
+
+hct_myProduct-details.html  我的乐谱详情
+
+hct_relation.html  联系我们
+
+hct_confirm-perform.html  确认订单-表演授权
+
+hct_confirm-print.html  确认订单-打印授权
+
+hct_order-details.html  确认订单-订单信息
+
+hct_play.html  支付页面
+
+hct_play-success.html  支付成功
+
+hct_Product-details.html 商品详情-作曲家 （查看评价）
+
+hct_sreach-list.html  搜索结果
+
+hct_composer-musicTedails.html 我的乐谱库详情 -作曲家
+
+hct_legal-demand.html  正版查验
+
+hct_legal-report.html  正版查验-投诉举报
+
+hct_le-report-success.html 正版查验-投诉举报成功
+
+hct_information-list.html 资讯列表
+
+hct_information-details.html 资讯详情
+
+hct_composer-list.html  作曲家列表
+
+hct_composer-details.html  作曲家详情

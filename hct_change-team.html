@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>个人信息-修改合唱团</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_personal-center.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+     <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+ 
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+    <!-- 主要内容 -->
+  <div class="clearfix">
+      <!-- 路径及标题 -->
+      <div class="common_part01 of_height"> 
+        <div class="well">
+           <p class="location clearfix">
+           <a href="hct_index.html" class="loca_a">首页</a>
+            <a href="hct_personal-center.html" class="loca_a">个人中心</a>
+            <a href="hct_per-information.html" class="loca_a">个人信息</a>            
+            <a href="hct_change-team.html" class="loca_a loca_last">添加/修改地址</a>
+           </p>         
+
+           <h1 class="common_title cf40">个人中心</h1>
+        </div>
+      </div>
+      <!-- 路径及标题 -->
+      <div class="well">
+            <div class="center_title of_height">
+              <h2 class="per_name red40">添加/修改合唱团</h2>
+              <p class="p3 p_text">查看或修改您的合唱团信息。</p>
+            </div>
+            <form action="" class="form">
+                <div class="form_box of_height">
+                    <label class="label_team">
+                      <span class="input_name fl"> <i class="red">*</i>合唱团名称：</span>
+                      <input type="text" name="team_name" class="input_team fl" placeholder="请输入您的合唱团名称" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>主办机构：</span>
+                      <input type="text" name="jigou" class="input_team fl" placeholder="请输入您的主办机构" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>常驻指挥姓名：</span>
+                      <input type="text" name="zhihiu_name" class="input_team fl" placeholder="请输入合唱团常驻指挥姓名" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>常驻指挥联系方式：</span>
+                      <input type="text" name="zhihiu_relation" class="input_team fl" placeholder="请输入您的合唱团名称" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>本人在合唱团中的角色：</span>
+                      <input type="text" name="per_join" class="input_team fl" placeholder="请输入您在合唱团中的角色" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>本人联系电话：</span>
+                      <input type="text" name="mobile" class="input_team fl" placeholder="请输入您的联系电话" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>本人电子邮箱：</span>
+                      <input type="text" name="email"  class="input_team fl" placeholder="请输入您的电子邮箱" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>合唱团名称：</span>
+                      <textarea name="introduce" class="team_area fl" placeholder="请输入您的合唱团介绍"></textarea>
+                    </label>
+
+                    <label class="label_team">
+                      <span class="input_name fl"><i class="red">*</i>合唱团网络视频链接：</span>
+                      <input type="text" name="link" class="input_team fl" placeholder="请输入您的合唱团网络视频链接" />
+                    </label>
+                    <div class="of_height ta_center">
+                      <input type="submit" value="确定" class=" btn_submit margin_t50 "/>
+                    </div>
+                </div>
+            </form>       
+      </div>
+  </div>
+    <!-- 主要内容 end -->
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+
+</body>
+
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+//提交表单
+$('form').submit(function () {
+    var error = "";
+    var team_name = $('input[name="team_name"]').val();
+    var jigou = $('input[name="jigou"]').val();
+    var zhihiu = $('input[name="zhihiu"]').val();
+    var zhihiu_relation = $('input[name="zhihiu_relation"]').val();
+    var per_join = $('input[name="per_join"]').val();
+    var mobile = $('input[name="mobile"]').val();
+    var email = $('input[name="email"]').val();
+    var introduce = $('textarea[name="introduce"]').val();
+    var link = $('input[name="link"]').val();
+    if (team_name.length < 1) {
+        error += '请输入您的合唱团名称';
+    } 
+    else if(jigou.length < 1){
+        error += '请输入您的主办机构';
+    }
+    else if(zhihiu.length < 1){
+        error += '请输入合唱团常驻指挥姓名';
+    }
+    else if(zhihiu_relation.length < 1){
+        error += '请输入您的合唱团名称';
+    }
+    else if(per_join.length < 1){
+        error += '请输入您在合唱团中的角色';
+    }
+    else if(mobile.length < 1){
+        error += '请输入您的联系电话';
+    }
+    else if(introduce.length < 1){
+        error += '请输入您的电子邮箱';
+    }
+    else if(year.length < 1){
+        error += '请输入您的合唱团介绍';
+    }
+    else if(link.length < 1){
+        error += '请输入您的合唱团网络视频链接';
+    }
+    if (error) {
+        showErrorMsg(error);
+        return false;
+    }
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: $('form')[0].action,
+        data: $('form').serialize(),// 你的formid
+        success: function (data) {
+            if (data.status == 1) {
+              window.history.back(1-);
+            } else {
+                showErrorMsg(data.msg);
+            }
+        }
+    });
+    return false;
+}); 
+// 个人信息设置默认
+function btn_mo(obj){
+  $(obj).parent().addClass("active").siblings("li").removeClass("active");     
+}
+// 删除
+function del_team(obj){
+  $(obj).parent().remove();
+}
+
+$(function(){
+  $('input,textarea').placeholder();
+})
+</script>
+</html>

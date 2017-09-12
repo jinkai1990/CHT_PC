@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>个人信息-添加/修改地址</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_personal-center.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+    <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+ 
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+    <!-- 主要内容 -->
+  <div class="clearfix ">
+      <!-- 路径及标题 -->
+      <div class="common_part01 of_height"> 
+        <div class="well">
+           <p class="location clearfix">
+           <a href="hct_index.html" class="loca_a">首页</a>
+            <a href="hct_personal-center.html" class="loca_a">个人中心</a>
+            <a href="hct_per-information.html" class="loca_a">个人信息</a>            
+            <a href="hct_change-team.html" class="loca_a loca_last">添加/修改地址</a>
+           </p>         
+
+           <h1 class="common_title cf40">个人中心</h1>
+        </div>
+      </div>
+      <!-- 路径及标题 -->
+      <div class="well01">
+            <div class="center_title of_height">
+              <h2 class="per_name red40">添加/修改地址</h2>
+              <p class="p3 p_text">查看或修改您的收货地址信息。</p>
+            </div>
+            <form action="" class="form">
+                <div class="form_box of_height">
+                    <label class="label_team">
+                      <span class="input_name fl">收货人：</span>
+                      <input type="text" name="name" class="input_team fl" placeholder="请输入您的收货人" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl">邮箱地址：</span>
+                      <input type="text" name="email" class="input_team fl" placeholder="请输入您的邮箱地址" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl">联系电话：</span>
+                      <input type="text" name="moblie" class="input_team fl" placeholder="请输入您的联系电话" />
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl">收货地区：</span>
+              
+                        <!--收货地区  -->
+                        <div class="controls controls_info">
+                            <input name='country' value='1' type="hidden">
+                            <select name="province" id="province" onChange="get_city(getarea_url, this)" class="select_info">
+                                <option value="0">广东省</option>
+                                <volist name="province_arr" id="p">
+                                    <option <if condition="$province eq $p['id']">selected</if> value="{$p.id}">{$p.name}</option>
+                                </volist>
+                            </select>
+                            <select name="city" id="city" onChange="get_area(getarea_url, this)" class="select_info">
+                                <option value="0">广州市</option>
+                                <volist name="city_arr" id="p">
+                                    <option <if condition="$city eq $p['id']">selected</if> value="{$p.id}">{$p.name}</option>
+                                </volist>
+                            </select>
+                            <select name="district" id="district" onChange="get_twon(getarea_url, this)" class="select_info">
+                                <option value="0">番禺区</option>
+                                <volist name="district_arr" id="p">
+                                    <option <if condition="$district eq $p['id']">selected</if> value="{$p.id}">{$p.name}</option>
+                                </volist>
+                            </select>
+
+                        </div>
+                        <!--收货地区  -->
+                    </label>
+                    <label class="label_team">
+                      <span class="input_name fl">详细地址：</span>
+                      <input type="text" name="address" class="input_team fl" placeholder="请输入您的收货地址" />
+                    </label>
+                    <div class="of_height ta_center">
+                      <button  id="btn_submit" type="button"  class=" btn_submit margin_t50 "/>确定</button>
+                    </div>
+                </div>
+
+              <!-- 警告框 -->
+              <div id="a_commonbox" class="a_commonbox" >
+                <div class="alert_box"></div>
+                    <div class="alert_boxbg">
+                       <div class="alert_address of_height">
+                         <img src="./images/alert_icon.png" height="100" width="100" class="alert_img"/>
+                         <p class="made_text">确定修改吗?</p>
+                         <div class="made_true">
+                           <input type="submit" id="confirm" value="确定" class="confirm btn p3">
+                           <button type="button" id="cancel"  class="cancel btn p9">取消</button>                     
+                         </div>
+                       </div>
+                    </div>
+              </div>
+              <!-- 警告框 end -->
+            </form>       
+      </div>
+              <!-- 修改成功提示 -->
+              <div id="se_commonbox" class="se_commonbox" >
+                <div class="alert_box"></div>
+                    <div class="alert_boxbg">
+                       <div class="alert_address of_height">
+                         <img src="./images/secess_icon.png" height="100" width="100" class="alert_img"/>
+                         <p class="made_text">修改成功！</p>
+                       </div>
+                    </div>
+              </div>
+              <!-- 修改成功提示 end -->
+
+  </div>
+    <!-- 主要内容 end -->
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+
+</body>
+
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">  
+//提交表单
+$('form').submit(function () {
+    var error = "";
+    var name = $('input[name="name"]').val();
+    var email = $('input[name="email"]').val();
+    var moblie = $('input[name="moblie"]').val();
+    var province = $('select[name="province"]').val();
+    var city = $('select[name="city"]').val();
+    var district = $('select[name="district"]').val();
+    var address = $('input[name="address"]').val();
+    if (name.length < 1) {
+        error += '请输入您的收货人';
+    } 
+    else if(email.length < 1){
+        error += '请输入您的邮箱地址';
+    }
+    else if(moblie.length < 1){
+        error += '请输入您的联系电话';
+    }
+    else if(province.length < 1){
+        error += '请输入省份';
+    }
+    else if(city.length < 1){
+        error += '请输入市级';
+    }
+    else if(district.length < 1){
+        error += '请输入地区';
+    }
+    else if(address.length < 1){
+        error += '请输入您的收货地址';
+    }
+ 
+    if (error) {
+        showErrorMsg(error);
+        return false;
+    }
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: $('form')[0].action,
+        data: $('form').serialize(),// 你的formid
+        success: function (data) {
+            if (data.status == 1) {
+              window.history.back(1-);
+            } else {
+                showErrorMsg(data.msg);
+            }
+        }
+    });
+    return false;
+}); 
+//
+   window.onload = function(){
+     var a_commonbox = document.getElementById("a_commonbox");
+    var btn_submit = document.getElementById("btn_submit");
+     btn_submit.onclick = function(){
+     a_commonbox.style.display = "block";
+    }
+    var cancel = document.getElementById("cancel");    
+     cancel.onclick = function(){
+     a_commonbox.style.display = "none";
+    } 
+       //修改数据成功后，再调用以下成功页面 js
+      //修改成功提示setTimeout
+        $('.confirm').click(function(){
+            $('.se_commonbox').css('display','block');
+
+            setTimeout( "text()",1000);
+        });
+
+        function text(){
+            $('.se_commonbox').css('display','none')
+        };
+      //修改成功提示setTimeout
+
+  };
+ //修改成功提示setTimeout
+        $('.confirm').click(function(){
+            $('.se_commonbox').css('display','block');
+
+            setTimeout( "text()",1000);
+        });
+
+        function text(){
+            $('.se_commonbox').css('display','none')
+        };
+
+                 
+ $(function(){
+      $('input,textarea').placeholder();
+ })
+</script>
+</html>

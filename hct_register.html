@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>注册</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_index.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+     <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+ 
+</head>
+<body>
+<div class="content">
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+<!-- 跳转到登录位置 -->
+<div id="por"></div>
+<!-- 跳转到登录位置 end -->
+
+    <!-- 登陆内容 -->
+<div class="main clearfixd">
+    <div class="login_box">
+       <form action="">
+          <div class="radio_box active">
+             <label class="label_user ">
+              <i class="check_comm iCheck-ed iCheck-no"></i>
+               <input type="radio" name="mycheck"  checked="checked" value="use1" class="reg_input" />我是作曲家用户
+             </label>
+          </div>
+
+          <div class="radio_box">          
+             <label class="label_user ">
+              <i class="check_comm iCheck-ed iCheck-no "></i>
+               <input type="radio" name="mycheck"  value="use2" class="reg_input"/>我是合唱团用户
+             </label>
+          </div>
+           <input type="submit" value="下一步" class="btn btn_mt20">
+
+
+       </form>
+
+  </div>
+</div>    
+    <!-- 登陆内容 end -->
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+</div>
+</body>
+<script type="text/javascript" src="js/placholder.js"></script>
+
+
+<script type="text/javascript">
+         $(function  () {
+           $('.login_box .radio_box .label_user').click(function () {
+              $(this).parent().addClass("active").siblings().removeClass("active");
+           })
+           $('input').placeholder();        
+
+         })
+
+</script>
+</html>

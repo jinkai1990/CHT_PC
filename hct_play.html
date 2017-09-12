@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>确认订单-支付页面</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_index.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+     <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+ 
+</head>
+<body>
+<div class="content">
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+    <!-- 主要内容 -->
+  <div class="clearfix">
+      <!-- 路径及标题 -->
+      <div class="common_part01 of_height"> 
+        <div class="well">
+           <p class="location clearfix">
+           <a href="hct_index.html" class="loca_a">首页</a>
+           <a href="hct_confirm-order.html" class="loca_a loca_last">乐谱服务</a>
+           </p>         
+
+           <h1 class="common_title cf40">乐谱服务</h1>
+        </div>
+      </div>
+
+      <!-- 路径及标题 -->
+      <div class="well ">
+        <ul class="perform_ul of_height">
+           <li class="order_li01">1.授权信息</li>
+           <li class="order_li02">2.订单信息</li>
+           <li class="order_li03">3.支付页面</li>
+           <li class="">4.支付成功</li>
+        </ul>
+      <form action="" method="">
+        <div class="of_height">
+              <h2 class="red40 h2_dtitle">支付页面</h2>
+
+               <div class="play of_height fl">
+                  <label class="label_play on active">
+                  <i class="check_comm iCheck-ed iCheck-no"></i>
+                   <input type="radio" name="check"  checked="checked" value="" class="print_radio" />
+                   <img src="./images/weiximg_play.png" width="163" height="47" class="play_way"> 
+                  </label>
+               </div>
+               <p class="play_num fr p3">订单合计：<span class="red40">￥800.00</span></p>
+               <div class="play_box">
+                   <input type="submit" value="立即支付" class="btn_submit play_btn"/>
+               </div>
+
+
+
+        </div>
+      </form>
+
+  </div>
+
+
+    <!-- 主要内容 end -->
+
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/placholder.js"></script>
+<script type="text/javascript">
+      $(function() {
+       $('.label_details').click(function () {
+          $(this).addClass("on").siblings().removeClass("on");
+          $(this).addClass("active").siblings().removeClass("active");
+       })         
+  })
+</script>
+
+</html>

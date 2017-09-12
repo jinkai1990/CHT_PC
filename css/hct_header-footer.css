@@ -1,0 +1,241 @@
+/*头部样式*/
+
+.header{
+	position: relative;
+}
+.header .header_f{
+	position: absolute;
+	left: 0;
+	top: 32px;
+}
+
+.header .header_p{
+	letter-spacing: 2px;
+}
+.header .title{
+	letter-spacing: 2px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 25px;
+}
+/*搜索框*/
+.header_top{
+	margin-bottom: 32px;
+}
+
+.header .header_r{
+	position: absolute;
+	right: 0;
+	top: 19px;
+	height: 28px;
+	border-bottom: 1px solid #666;
+	width: 148px;
+}
+
+.header .header_r .input_search{
+    width: 120px;
+    height: 28px;
+    padding:0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+.header .header_r .submit_btn{
+    width: 28px;
+    height: 28px;
+    padding:0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+    background: url(../images/search_icon.png) center center no-repeat;
+}
+
+/*搜索框 end*/
+/*导航栏*/
+.nav .ul_nav{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0 auto;
+    width: 924px;
+}
+
+.nav .ul_nav li{
+	float: left;
+	margin: 0 31px;
+}
+.nav .ul_nav li .li_a{
+	color: #666;
+	font-size: 16px;
+	display: inline-block;
+	padding:0 18px 13px 18px;
+}
+.nav .ul_nav li.active .li_a{
+	color: #c03329;
+    border-bottom: 3px solid #c03329;
+
+}
+.nav .ul_nav li .li_a:hover{
+	color: #c03329;
+    border-bottom: 3px solid #c03329;
+}
+.nav_fixed{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+    height: 50px;
+    padding-top: 8px;
+    z-index: 11;
+}
+.info_menu{
+	position: relative;	
+    z-index: 1;
+}
+.info_menu:hover .new_menu{
+    display: block;
+}
+.info_menu:hover .menu_a{
+	color: #c03329;
+}
+.new_menu{
+	overflow: hidden;
+    width: 100px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    display: none;
+    padding-bottom: 6px;
+}
+.nav .new_menu li.menu_li{
+	margin: 0;
+	width: 100%;
+}
+.nav .new_menu li.menu_li .li_new{
+    color: #666;
+    font-size: 14px;
+    display: inline-block;
+    padding-bottom:10px ;
+    padding-top: 10px;
+    border-bottom: 2px solid #fff;
+    z-index: 100;
+}
+
+.nav .new_menu li.menu_li .li_new:hover{
+	color: #c03329;
+    border-bottom: 2px solid #c03329;
+}
+
+
+/*导航栏 emd*/
+
+/*头部样式 end*/
+
+/*底部样式 */
+.footer{
+	width: 100%;
+	background: #4b4b4b;
+    float: left;
+	padding-bottom: 50px;
+    padding-top: 22px;
+    text-align: center;
+    position: relative;
+}
+.footer .footer_ul{
+	display: inline-block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+
+}
+.footer .footer_ul li{
+	display: inline-block;
+    padding:0 45px;
+
+}
+.footer .footer_ul li .li_a{
+	color: #fff;
+}
+.footer .footer_ul li .li_a:hover{
+	color: #c03329;
+}
+
+.footer .erwei_box{
+	position: absolute;
+    right: 12.8%;
+    top: 22px;
+	color: #fff;
+	text-align: center;	
+}
+.footer .erwie_img{
+	width: 97px;
+	height: 97px;
+
+}
+.footer .erwei_box .cao{
+	margin-top: 2px;
+}
+.footer .footer_b{
+	color: #fff;
+	padding-top: 27px;
+	border-top: 1px solid #fefefe;
+}
+
+/*底部样式 end*/
+/*控件*/
+.izl_rmenu{
+	position: fixed;
+    left: 96%;
+    bottom: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+}
+.izl_rmenu .btn_top{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(../images/top.png) center center no-repeat;
+	cursor: pointer;
+}
+/*控件 end*/
+
+/*位置*/
+.common_part01{
+	background: #f2f2f2;
+}
+.location{
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.location .loca_a{
+    color: #666;
+    margin-right: 8px;	
+    background: url(../images/loca_icon.png) right center no-repeat;
+    display: inline-block;
+    padding-right: 12px;
+}
+.location .loca_a.loca_last{
+	background: none;
+	 color: #000;
+
+}
+.location .loca_a:hover{
+	color: #c03329;
+}
+.common_part01 .common_title{
+	border-bottom: 2px solid #666;
+	padding-bottom: 10px;
+
+}
+
+/*位置*/

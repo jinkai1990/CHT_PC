@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/htmlcharset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="WT.page_name" content="index" />
+    <meta content="zh-cn" http-equiv="content-language" />
+    <meta name="SmartView_Page" content="1" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>个人信息-合唱团</title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+   <link type="text/css" rel="stylesheet" href="./css/hct_header-footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/hct_personal-center.css">
+    <link href="./images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+    <script type="text/javascript"> var header_index = 0;</script>
+     <script type="text/javascript" src="js/hct-header_footer.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+ 
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="new_header" class="header"></div>
+    <!-- 头部  end-->
+    <!-- 主要内容 -->
+  <div class="clearfix">
+      <!-- 路径及标题 -->
+      <div class="common_part01 of_height"> 
+        <div class="well">
+           <p class="location clearfix">
+           <a href="hct_index.html" class="loca_a">首页</a>
+            <a href="hct_personal-center.html" class="loca_a">个人中心</a>
+            <a href="hct_per-information.html" class="loca_a loca_last">个人信息</a>
+           </p>         
+
+           <h1 class="common_title cf40">个人中心</h1>
+        </div>
+      </div>
+      <!-- 路径及标题 -->
+      <div class="well">
+            <div class="center_title of_height">
+              <h2 class="per_name red40">个人信息</h2>
+              <p class="p3 p_text">查看您现有的全部乐谱信息。</p>
+            </div>
+          <form action="">
+
+            <div class="per_info_l ta_center fl">
+                  <p class="info_tou">
+                     <img src="./images/touxiang.png" width="111" height="111" class="touxiang" />
+                  </p>
+                 <p class="p3">点击修改头像</p>
+                 <input type="file" class="file_btn"/>
+            </div>
+            <div class="fl per_info_r">
+                <div class="info_box of_height _mt40">
+                   <span class="p3 fl team_name">合唱团：</span>
+                   <ul class="ul_team of_height fl">
+                     <li class="active team_li">
+                        <ul class="ul01 of_height">
+                          <li class="li_second"><span class="li_width fl">负责人：</span><span class="fl">张三丰</span></li>
+                          <li class="li_second"><span class="li_width fl">合唱团名称：</span><span class="fl">三丰合唱团</span></li>
+                          <li class="li_second"><span class="li_width fl">电子邮箱：</span><span class="fl">zhang3feng@sina.com</span></li>
+
+                        </ul>
+                          <button onclick="del_team(this)" class="p6 fr a_del btn">删除</button>
+                          <a href="hct_change-team.html"  class="p0 fr a_del btn">修改</a>
+                          <button  type="button" onclick="btn_mo(this)" class="p0 fr a_del btn red btn_mo">设为默认</button>                  
+                     </li>
+                     <li class=" team_li">
+                        <ul class="ul01 of_height">
+                          <li class="li_second"><span class="li_width fl">负责人：</span><span class="fl">张三丰</span></li>
+                          <li class="li_second"><span class="li_width fl">合唱团名称：</span><span class="fl">三丰合唱团</span></li>
+                          <li class="li_second"><span class="li_width fl">电子邮箱：</span><span class="fl">zhang3feng@sina.com</span></li>
+
+                        </ul>
+                          <button onclick="del_team(this)" class="p6 fr a_del btn">删除</button>
+                          <a href="hct_change-team.html"  class="p0 fr a_del btn">修改</a>
+                          <button  type="button" onclick="btn_mo(this)" class="p0 fr a_del btn red btn_mo">设为默认</button>
+                     </li>
+                     <li class="li_btn">
+                         <a href="hct_change-team.html" class="btn red fr add_box">添加合唱团 +</a>
+                     </li>
+                   </ul>
+                </div>
+
+                <div class="info_box of_height _mt40">
+                   <span class="p3 fl team_name">地址：</span>
+                   <ul class="ul_team of_height fl">
+                     <li class="active team_li">
+                        <ul class="ul01 of_height">
+                          <li class="li_second"><span class="li_width fl">收货人：</span><span class="fl">张小姐</span>
+                          </li>
+                          <li class="li_second"><span class="li_width fl">邮箱地址：</span><span class="fl">123456789@qq.com</span
+                          </li>
+                          <li class="li_second"><span class="li_width fl">收货地址：</span><span class="fl">广东省&nbsp;&nbsp;广州市&nbsp;&nbsp;番禺区&nbsp;&nbsp;南村镇<br/>桥兴商务大厦兴南大道33号6楼611</span>
+                          </li>
+                          <li class="li_second"><span class="li_width fl">联系电话：</span><span class="fl">13800138000</span>
+                          </li>
+                        </ul>
+
+                          <button onclick="del_team(this)" class="p6 fr a_del btn">删除</button>
+                          <a href="hct_change-team.html" class="p0 fr a_del btn">修改</a>
+                          <button type="button" onclick="btn_mo(this)" class="p0 fr a_del btn red btn_mo">设为默认</button>                  
+                     </li>
+                     <li class=" team_li">
+                        <ul class="ul01 of_height">
+                          <li class="li_second"><span class="li_width fl">收货人：</span><span class="fl">张小姐</span></li>
+                          <li class="li_second"><span class="li_width fl">邮箱地址：</span><span class="fl">123456789@qq.com</span></li>
+                          <li class="li_second"><span class="li_width fl">收货地址：</span><span class="fl">广东省&nbsp;&nbsp;广州市&nbsp;&nbsp;番禺区&nbsp;&nbsp;南村镇<br/>桥兴商务大厦兴南大道33号6楼611</span></li>
+                          <li class="li_second"><span class="li_width fl">联系电话：</span><span class="fl">13800138000</span></li>
+
+                        </ul>
+                          <button onclick="del_team(this)" class="p6 fr a_del btn">删除</button>
+                          <a href="hct_change-team.html" class="p0 fr a_del btn">修改</a>
+                          <button type="button" onclick="btn_mo(this)" class="p0 fr a_del btn red btn_mo">设为默认</button>                  
+                     </li>
+                     <li class="li_btn">
+                         <a href="hct_change-address.html" class="btn red fr add_box">添加地址 +</a>
+                     </li>
+                   </ul>
+                </div>
+                <div class="of_height ta_center">
+                  <input type="submit" value="确定" class=" btn_submit margin_t50 "/>
+                </div>
+            </div>
+        </form>       
+      </div>
+  </div>
+
+
+    <!-- 主要内容 end -->
+
+    <!-- 底部 -->
+    <div id="footer" ></div>
+    <!-- 底部  end-->
+  <!-- 控件 -->
+  <div id="izl_rmenu" class="izl_rmenu"> </div>
+  <!-- 控件  end -->
+
+</body>
+<script type="text/javascript">
+    // 个人信息设置默认
+    function btn_mo(obj){
+       $(obj).parent().addClass("active").siblings("li").removeClass("active");     
+    }
+  // 删除
+  function del_team(obj){
+    $(obj).parent().remove();
+  }
+ 
+</script>
+</html>

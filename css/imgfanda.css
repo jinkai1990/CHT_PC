@@ -1,0 +1,80 @@
+.item{
+  margin:20px;
+}
+.lb_wrap{
+  display:none;
+}
+
+.lightbox_bg{
+  background:#000;
+  filter:alpha(opacity=70);
+  opacity:.7;
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+.lightbox{
+  position:absolute;
+  left:0;
+  top:50%;
+  width:100%;
+  z-index:2;
+  text-align:center;
+}
+
+
+.ul_lightBox {
+    height: auto;
+    margin-left: -24px;
+    overflow: hidden;
+}
+
+.ul_lightBox li.light_li{
+    display: block;
+    float: left;
+    width: 465px;
+    height: 277px;
+    border: solid 1px #ccc;
+    background-color: #f4f5f5;
+    opacity: 0.87;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.ul_lightBox .light_li img{
+  width: 600px;
+  height: 800px;
+}
+
+.lightbox .lg_img{
+   width: 600px;
+  height: 800px;
+}
+.lightbox p{
+  position:absolute;
+  height:48px;
+  width:48px;
+  top:50%;
+  z-index:2;
+  margin-top:-30.5px;
+  cursor:pointer;
+}
+
+.prev{
+  background: url(../images/prev.png);
+  left: 20%;
+}
+.next{
+  background: url(../images/next.png);
+    right: 20%;
+}
+
+.lightbox p.close{
+  background: url(../images/cancel48grey.png);
+  right: 29%;
+    top: 8%;
+}
